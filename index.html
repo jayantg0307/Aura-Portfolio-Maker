@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aura | Creative Portfolio Engine</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+
+  <div id="templatePage">
+    <div class="template-container">
+
+      <!-- Header -->
+      <div class="template-header">
+        <div class="eyebrow">Portfolio Engine v2.0</div>
+        <h1>Choose Your Identity</h1>
+        <p>Two radically different aesthetics. One will be unmistakably yours.</p>
+      </div>
+
+      <!-- Two template cards -->
+      <div class="template-grid">
+
+        <!-- Card 1: Neon Shard (dark/futuristic) -->
+        <div class="template-card t1-card" onclick="selectTemplate(1)">
+          <div class="card-preview t1-preview">
+            <div class="t1-preview-inner">
+              <div class="t1-bar t1-bar-purple"></div>
+              <div class="t1-bar t1-bar-mid"></div>
+              <div class="t1-bar t1-bar-dim"></div>
+              <div class="t1-bar t1-bar-cyan"></div>
+              <div class="t1-dots">
+                <div class="t1-dot"></div>
+                <div class="t1-dot" style="opacity: 0.6"></div>
+                <div class="t1-dot" style="opacity: 0.3"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-badge t1-badge">Dark / Futuristic</div>
+            <div class="card-name">Neon Shard</div>
+            <p class="card-desc">Dark glassmorphic brutalism with electric gradients and stark typography. Built for impact.</p>
+            <ul class="card-features">
+              <li>Bebas Neue + Space Grotesk typography</li>
+              <li>Animated orb backgrounds</li>
+              <li>Glowing hover interactions</li>
+              <li>Grid-overlay depth system</li>
+              <li>Monospace editorial details</li>
+            </ul>
+            <button class="select-btn t1-select">Select Neon Shard</button>
+          </div>
+        </div>
+
+        <!-- Card 2: Luxe Editorial (light/warm) -->
+        <div class="template-card t2-card" onclick="selectTemplate(2)">
+          <div class="card-preview t2-preview">
+            <div class="t2-preview-inner">
+              <div class="t2-serif">Aarav</div>
+              <div class="t2-line"></div>
+              <div class="t2-bar t2-bar-gold"></div>
+              <div class="t2-bar t2-bar-wide"></div>
+              <div class="t2-bar t2-bar-short"></div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-badge t2-badge">Light / Editorial</div>
+            <div class="card-name">Luxe Editorial</div>
+            <p class="card-desc">Magazine-grade print aesthetic with serif typography, warm neutrals, and deliberate whitespace.</p>
+            <ul class="card-features">
+              <li>Playfair Display + Cormorant serif</li>
+              <li>Warm parchment color system</li>
+              <li>Print-inspired section layouts</li>
+              <li>Gold accent details</li>
+              <li>Generous editorial spacing</li>
+            </ul>
+            <button class="select-btn t2-select">Select Luxe Editorial</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aura | Build Your Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="form.css"/>
+</head>
+<body>
+
+  <div class="form-wrap">
+
+    <!-- Top bar -->
+    <div class="form-topbar">
+      <div class="form-title">Build Your Portfolio</div>
+      <button class="change-btn" onclick="window.location.href='index.html'">← Change Template</button>
+    </div>
+
+    <form id="portfolioForm">
+
+      <!-- 01 — Personal -->
+      <div class="section-label">01 — Personal</div>
+      <input type="text" id="name"         placeholder="Your Full Name" required/>
+      <input type="text" id="tagline"      placeholder="Your Title (e.g. Senior Product Designer)"/>
+      <input type="file" id="profileImage" accept="image/*"/>
+      <div class="ai-row">
+        <textarea id="about" rows="3" placeholder="Write your bio, or let AI craft it from your info above..."></textarea>
+        <button type="button" class="ai-btn" id="aiBtn" onclick="generateAboutAI()">✨ AI Write</button>
+      </div>
+      <input type="text" id="skills" placeholder="Skills, comma-separated (e.g. React, Figma, Python)"/>
+
+      <!-- 02 — Work Experience -->
+      <div class="section-label">02 — Work Experience</div>
+      <div id="experienceInputs"></div>
+      <button type="button" class="add-btn" onclick="addExperience()">+ Add Experience</button>
+
+      <!-- 03 — Education -->
+      <div class="section-label">03 — Education</div>
+      <div id="educationInputs"></div>
+      <button type="button" class="add-btn" onclick="addEducation()">+ Add Education</button>
+
+      <!-- 04 — Projects -->
+      <div class="section-label">04 — Projects</div>
+      <div id="projectInputs"></div>
+      <button type="button" class="add-btn" onclick="addProject()">+ Add Project</button>
+
+      <button type="button" class="generate-btn" onclick="handleFormSubmit()">Generate Portfolio →</button>
+
+    </form>
+  </div>
+
+  <script src="form.js"></script>
+</body>
+</html>
